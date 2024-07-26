@@ -1,0 +1,538 @@
+local a = {}
+a["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"))
+a["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets
+a["1"]["Name"] = [[Screen]]
+a["1"]["ResetOnSpawn"] = false
+a["1"]["DisplayOrder"] = 99999
+a["2"] = Instance.new("Frame", a["1"])
+a["2"]["ZIndex"] = 0
+a["2"]["BorderSizePixel"] = 0
+a["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+a["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+a["2"]["BackgroundTransparency"] = 0.75
+a["2"]["Size"] = UDim2.new(1, 0, 1, 0)
+a["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+a["2"]["Name"] = [[ClickGui]]
+a["3"] = Instance.new("LocalScript", a["2"])
+a["4"] = Instance.new("Frame", a["3"])
+a["4"]["BorderSizePixel"] = 0
+a["4"]["BackgroundColor3"] = Color3.fromRGB(162, 162, 162)
+a["4"]["BackgroundTransparency"] = 1
+a["4"]["Size"] = UDim2.new(0, 100, 0, 100)
+a["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["4"]["Name"] = [[Module]]
+a["5"] = Instance.new("TextLabel", a["4"])
+a["5"]["TextWrapped"] = true
+a["5"]["BorderSizePixel"] = 0
+a["5"]["TextScaled"] = true
+a["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["5"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+a["5"]["TextSize"] = 14
+a["5"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+a["5"]["Size"] = UDim2.new(1, 0, 1, 0)
+a["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["5"]["Text"] = [[Module]]
+a["5"]["Name"] = [[Title]]
+a["5"]["BackgroundTransparency"] = 1
+a["6"] = Instance.new("UIPadding", a["5"])
+a["6"]["PaddingTop"] = UDim.new(0.25, 0)
+a["6"]["PaddingRight"] = UDim.new(0.25, 0)
+a["6"]["PaddingBottom"] = UDim.new(0.25, 0)
+a["6"]["PaddingLeft"] = UDim.new(0.25, 0)
+a["7"] = Instance.new("ImageLabel", a["4"])
+a["7"]["BorderSizePixel"] = 0
+a["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["7"]["Image"] = [[rbxassetid://11552476728]]
+a["7"]["Size"] = UDim2.new(0.14244209229946136, 0, 0.7396281361579895, 0)
+a["7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["7"]["Name"] = [[Expand]]
+a["7"]["Rotation"] = -90
+a["7"]["BackgroundTransparency"] = 1
+a["7"]["Position"] = UDim2.new(0.8480759859085083, 0, 0.1292249709367752, 0)
+a["8"] = Instance.new("UIAspectRatioConstraint", a["7"])
+a["9"] = Instance.new("Frame", a["3"])
+a["9"]["BorderSizePixel"] = 0
+a["9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["9"]["BackgroundTransparency"] = 1
+a["9"]["Size"] = UDim2.new(0.5855293273925781, 0, 0.029999999329447746, 0)
+a["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["9"]["Position"] = UDim2.new(0.4144705832004547, 0, 0.9700000286102295, 0)
+a["9"]["Name"] = [[List]]
+a["a"] = Instance.new("Frame", a["9"])
+a["a"]["BorderSizePixel"] = 0
+a["a"]["BackgroundColor3"] = Color3.fromRGB(75, 156, 255)
+a["a"]["Size"] = UDim2.new(0.041067808866500854, 0, 0.9999999403953552, 0)
+a["a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["a"]["Position"] = UDim2.new(0, 0, 0.0000022555491341336165, 0)
+a["a"]["Name"] = [[Bar]]
+a["b"] = Instance.new("TextLabel", a["9"])
+a["b"]["TextWrapped"] = true
+a["b"]["BorderSizePixel"] = 0
+a["b"]["TextScaled"] = true
+a["b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+a["b"]["TextXAlignment"] = Enum.TextXAlignment.Left
+a["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+a["b"]["TextSize"] = 14
+a["b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+a["b"]["Size"] = UDim2.new(0.9589338302612305, 0, 1, 0)
+a["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["b"]["Text"] = [[Example]]
+a["b"]["Name"] = [[Title]]
+a["b"]["BackgroundTransparency"] = 0.4000000059604645
+a["b"]["Position"] = UDim2.new(0.04106779024004936, 0, 0, 0)
+a["c"] = Instance.new("UIPadding", a["b"])
+a["c"]["PaddingTop"] = UDim.new(0.10000000149011612, 0)
+a["c"]["PaddingRight"] = UDim.new(0.10000000149011612, 0)
+a["c"]["PaddingBottom"] = UDim.new(0.10000000149011612, 0)
+a["c"]["PaddingLeft"] = UDim.new(0.10000000149011612, 0)
+a["d"] = Instance.new("Frame", a["3"])
+a["d"]["BorderSizePixel"] = 0
+a["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+a["d"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+a["d"]["BackgroundTransparency"] = 1
+a["d"]["Size"] = UDim2.new(0.09301398694515228, 0, 0.5279379487037659, 0)
+a["d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["d"]["Position"] = UDim2.new(0.25, 0, 0.5, 0)
+a["d"]["Name"] = [[Category]]
+a["e"] = Instance.new("Frame", a["d"])
+a["e"]["BorderSizePixel"] = 0
+a["e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+a["e"]["BackgroundTransparency"] = 0.4000000059604645
+a["e"]["Size"] = UDim2.new(1, 0, 0.06800000369548798, 0)
+a["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["e"]["Position"] = UDim2.new(0, 0, -0.0008013587212190032, 0)
+a["e"]["Name"] = [[Tab]]
+a["f"] = Instance.new("TextLabel", a["e"])
+a["f"]["TextWrapped"] = true
+a["f"]["BorderSizePixel"] = 0
+a["f"]["TextScaled"] = true
+a["f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["f"]["TextXAlignment"] = Enum.TextXAlignment.Left
+a["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+a["f"]["TextSize"] = 14
+a["f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+a["f"]["Size"] = UDim2.new(1, 0, 1, 0)
+a["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["f"]["Text"] = [[Combat]]
+a["f"]["Name"] = [[Title]]
+a["f"]["BackgroundTransparency"] = 1
+a["10"] = Instance.new("UIPadding", a["f"])
+a["10"]["PaddingTop"] = UDim.new(0.25, 0)
+a["10"]["PaddingBottom"] = UDim.new(0.25, 0)
+a["10"]["PaddingLeft"] = UDim.new(0.25, 0)
+a["11"] = Instance.new("TextLabel", a["e"])
+a["11"]["TextWrapped"] = true
+a["11"]["BorderSizePixel"] = 0
+a["11"]["TextScaled"] = true
+a["11"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["11"]["FontFace"] =
+    Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+a["11"]["TextSize"] = 14
+a["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+a["11"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+a["11"]["Size"] = UDim2.new(0.17381927371025085, 0, 1, 0)
+a["11"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["11"]["Text"] = [[-]]
+a["11"]["Name"] = [[Expand]]
+a["11"]["BackgroundTransparency"] = 1
+a["11"]["Position"] = UDim2.new(0.9120174050331116, 0, 0.4941079020500183, 0)
+a["12"] = Instance.new("ImageLabel", a["e"])
+a["12"]["BorderSizePixel"] = 0
+a["12"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["12"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+a["12"]["Image"] = [[rbxassetid://7485051715]]
+a["12"]["Size"] = UDim2.new(0.12221760302782059, 0, 0.6911827921867371, 0)
+a["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["12"]["Name"] = [[Icon]]
+a["12"]["BackgroundTransparency"] = 1
+a["12"]["Position"] = UDim2.new(0.13199706375598907, 0, 0.5000000596046448, 0)
+a["13"] = Instance.new("UIAspectRatioConstraint", a["12"])
+a["14"] = Instance.new("Frame", a["d"])
+a["14"]["ZIndex"] = 2
+a["14"]["BorderSizePixel"] = 0
+a["14"]["BackgroundColor3"] = Color3.fromRGB(75, 156, 255)
+a["14"]["Size"] = UDim2.new(1, 0, 0, 2)
+a["14"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["14"]["Position"] = UDim2.new(-0.005364806391298771, 0, 0.06719864904880524, 0)
+a["14"]["Name"] = [[Seperator]]
+a["15"] = Instance.new("Frame", a["d"])
+a["15"]["BorderSizePixel"] = 0
+a["15"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+a["15"]["BackgroundTransparency"] = 0.6000000238418579
+a["15"]["Size"] = UDim2.new(1, 0, 0.9286015033721924, 0)
+a["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["15"]["Position"] = UDim2.new(0, 0, 0.0713985338807106, 0)
+a["15"]["Name"] = [[Modules]]
+a["16"] = Instance.new("UIGridLayout", a["15"])
+a["16"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+a["16"]["CellSize"] = UDim2.new(1, 0, 0.07000000029802322, 0)
+a["17"] = Instance.new("Frame", a["1"])
+a["17"]["BorderSizePixel"] = 0
+a["17"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["17"]["BackgroundTransparency"] = 1
+a["17"]["Size"] = UDim2.new(1, 0, 1, 0)
+a["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["17"]["Name"] = [[Hud]]
+a["18"] = Instance.new("ImageLabel", a["17"])
+a["18"]["BorderSizePixel"] = 0
+a["18"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["18"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+a["18"]["Image"] = [[http://www.roblox.com/asset/?id=18577947244]]
+a["18"]["Size"] = UDim2.new(0.12777817249298096, 0, 0.7186253666877747, 0)
+a["18"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["18"]["Name"] = [[Watermark]]
+a["18"]["BackgroundTransparency"] = 1
+a["18"]["Position"] = UDim2.new(0.06387225538492203, 0, 0.9329268336296082, 0)
+a["19"] = Instance.new("UIAspectRatioConstraint", a["18"])
+a["19"]["AspectRatio"] = 1.4450758695602417
+a["1a"] = Instance.new("Frame", a["17"])
+a["1a"]["BorderSizePixel"] = 0
+a["1a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["1a"]["BackgroundTransparency"] = 1
+a["1a"]["Size"] = UDim2.new(0.1002994105219841, 0, 1, 0)
+a["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["1a"]["Position"] = UDim2.new(0.8997005820274353, 0, 0, 0)
+a["1a"]["Name"] = [[ModuleList]]
+a["1b"] = Instance.new("UIListLayout", a["1a"])
+a["1b"]["VerticalAlignment"] = Enum.VerticalAlignment.Bottom
+a["1b"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Right
+local function b()
+    local c = a["3"]
+    local d = game:GetService("UserInputService")
+    local e = game:GetService("TweenService")
+    local f = game:GetService("Lighting")
+    local g = game:GetService("TextService")
+    local h = c.Parent
+    local i = h.Parent
+    local j = i.Hud
+    local k = j.ModuleList
+    local l = {}
+    local m = Instance.new("BlurEffect")
+    m.Enabled = true
+    m.Parent = f
+    m.Size = 15
+    l[#l + 1] =
+        d.InputBegan:Connect(
+        function(n, o)
+            if o then
+                return
+            end
+            if n.KeyCode == Enum.KeyCode.RightShift then
+                h.Visible = not h.Visible
+                m.Enabled = h.Visible
+            end
+        end
+    )
+    local p = {}
+    local q = {}
+    local r = c.Category
+    local s = c.Module
+    local t = c.List
+    local function u(v)
+        if not v:IsA("Frame") then
+            return
+        end
+        local w = v.Tab
+        local x = w.Expand
+        local y = v.Modules
+        local z = false
+        local A
+        local B
+        local C
+        local D = y.Size
+        local E = true
+        local F
+        local G
+        local function H(I)
+            local J = tick()
+            local K = I.Position - B
+            local L = UDim2.new(C.X.Scale, C.X.Offset + K.X, C.Y.Scale, C.Y.Offset + K.Y)
+            local M = 0
+            if F and G then
+                local N = J - G
+                local O = (I.Position - F).Magnitude
+                M = O / N
+            end
+            local P = 1
+            if F.X < I.Position.X then
+                P = 1
+            elseif F.X > I.Position.X then
+                P = -1
+            end
+            F = I.Position
+            G = J
+            local Q = M * 0.003 * P
+            local R = TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+            local S = e:Create(v, R, {Position = L})
+            local T = e:Create(v, R, {Rotation = Q})
+            S:Play()
+            T:Play()
+        end
+        l[#l + 1] =
+            w.InputBegan:Connect(
+            function(I)
+                if I.UserInputType == Enum.UserInputType.MouseButton1 or I.UserInputType == Enum.UserInputType.Touch then
+                    z = true
+                    B = I.Position
+                    C = v.Position
+                    F = I.Position
+                    G = tick()
+                    I.Changed:Connect(
+                        function()
+                            if I.UserInputState == Enum.UserInputState.End then
+                                z = false
+                                local T = e:Create(v, TweenInfo.new(0.3), {Rotation = 0})
+                                T:Play()
+                            end
+                        end
+                    )
+                end
+            end
+        )
+        l[#l + 1] =
+            w.InputChanged:Connect(
+            function(I)
+                if I.UserInputType == Enum.UserInputType.MouseMovement or I.UserInputType == Enum.UserInputType.Touch then
+                    A = I
+                end
+            end
+        )
+        l[#l + 1] =
+            d.InputChanged:Connect(
+            function(I)
+                if z and I == A then
+                    H(I)
+                end
+            end
+        )
+        l[#l + 1] =
+            x.InputBegan:Connect(
+            function(I)
+                if I.UserInputType == Enum.UserInputType.MouseButton1 then
+                    local U
+                    if E then
+                        U = UDim2.new(y.Size.X.Scale, y.Size.X.Offset, 0, 0)
+                        x.Text = "+"
+                    else
+                        U = D
+                        x.Text = "-"
+                    end
+                    local R = TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+                    local V = e:Create(y, R, {Size = U})
+                    V:Play()
+                    E = not E
+                end
+            end
+        )
+    end
+    local function W()
+        for X, Y in ipairs(p) do
+            local Z = UDim2.new(X / (#p + 1), 0, 0.5, 0)
+            Y["UI"].Position = Z
+        end
+    end
+    q.addCategory = function(_, a0)
+        local a1 = r:Clone()
+        local w = a1.Tab
+        local y = a1.Modules
+        local a2 = w.Title
+        local a3 = w.Icon
+        a2.Text = _
+        a3.Image = a0
+        a1.Name = _
+        a1.Parent = h
+        local Y = {["Name"] = _, ["Icon"] = a0, ["Modules"] = {}, ["UI"] = a1}
+        p[#p + 1] = Y
+        W()
+        u(a1)
+    end
+    q.getCategory = function(v)
+        for a4, Y in p do
+            if Y["Name"] == v then
+                return Y
+            end
+        end
+    end
+    q.addModule = function(v, _, a5)
+        local Y = q.getCategory(v)
+        local a6 = Y["UI"]
+        local y = a6.Modules
+        local a7 = t:Clone()
+        a7.Parent = k
+        a7.Title.Text = _
+        a7.Size = UDim2.new(0.08 * a7.Title.Text:len(), 0, 0.03, 0)
+        a7.Visible = false
+        local a8 = s:Clone()
+        local x = a8.Expand
+        local a2 = a8.Title
+        a8.Parent = y
+        a2.Text = _
+        local a9 = TweenInfo.new(0.4, Enum.EasingStyle.Quint, Enum.EasingDirection.Out)
+        local aa = e:Create(a8, a9, {BackgroundTransparency = 0.8})
+        local ab = e:Create(a8, a9, {BackgroundTransparency = 1})
+        local ac = e:Create(a8, a9, {BackgroundTransparency = 0.65})
+        local ad = false
+        l[#l + 1] =
+            a8.InputBegan:Connect(
+            function(I)
+                if ad then
+                    if I.UserInputType == Enum.UserInputType.MouseMovement then
+                        ac:Play()
+                    elseif
+                        I.UserInputType == Enum.UserInputType.MouseButton1 or
+                            I.UserInputType == Enum.UserInputType.Touch
+                     then
+                        ad = not ad
+                        if ad then
+                            a5(true)
+                            a7.Visible = true
+                            ac:Play()
+                        else
+                            a5(false)
+                            a7.Visible = false
+                            aa:Play()
+                        end
+                    end
+                else
+                    if I.UserInputType == Enum.UserInputType.MouseMovement then
+                        aa:Play()
+                    elseif
+                        I.UserInputType == Enum.UserInputType.MouseButton1 or
+                            I.UserInputType == Enum.UserInputType.Touch
+                     then
+                        ad = not ad
+                        if ad then
+                            a5(true)
+                            a7.Visible = true
+                            ac:Play()
+                        else
+                            a5(false)
+                            a7.Visible = false
+                            aa:Play()
+                        end
+                    end
+                end
+            end
+        )
+        l[#l + 1] =
+            a8.InputEnded:Connect(
+            function(I)
+                if not ad and I.UserInputType == Enum.UserInputType.MouseMovement then
+                    ab:Play()
+                end
+            end
+        )
+        Y["Modules"][#Y["Modules"] + 1] = {["Name"] = _, ["Callback"] = a5, ["Env"] = {}, ["UI"] = a8}
+    end
+    q.getEnv = function(v, _)
+        local Y = q.getCategory(v)
+        for a4, ae in pairs(Y["Modules"]) do
+            if ae["Name"] == _ then
+                return ae["Env"]
+            end
+        end
+    end
+    q.setEnv = function(v, _, af)
+        local Y = q.getCategory(v)
+        for a4, ae in pairs(Y["Modules"]) do
+            if ae["Name"] == _ then
+                ae["Env"] = af
+            end
+        end
+    end
+    q.KillScript = function()
+        i:Destroy()
+        m:Destroy()
+        for a4, ag in l do
+            ag:Disconnect()
+        end
+    end
+    return q
+end
+local ah = b()
+local ai = Instance.new("ScreenGui", game:GetService("CoreGui"))
+ai.IgnoreGuiInset = true
+ai.Name = "CustomButtonGui"
+ai.DisplayOrder = 100000
+local aj = Instance.new("TextButton")
+aj.Parent = ai
+aj.Size = UDim2.new(0, 100, 0, 50)
+aj.Position = UDim2.new(0.5, -50, 0, 25)
+aj.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+aj.TextColor3 = Color3.fromRGB(255, 255, 255)
+aj.Text = "Toggled Off"
+aj.TextScaled = true
+local ak = false
+local function al()
+    local am = game:GetService("CoreGui"):FindFirstChild("Screen")
+    if am then
+        for _, an in pairs(am:GetChildren()) do
+            if an:IsA("GuiObject") then
+                an.Visible = not an.Visible
+            end
+        end
+    end
+    local ao = game:GetService("Lighting")
+    local ap = ao:FindFirstChildOfClass("BlurEffect")
+    if ap then
+        ap:Destroy()
+    end
+end
+local function aq()
+    if ak then
+        aj.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+        aj.Text = "Toggled On"
+    else
+        aj.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        aj.Text = "Toggled Off"
+    end
+end
+local function ar()
+    ak = not ak
+    aq()
+    al()
+end
+aj.MouseButton1Click:Connect(ar)
+local function as(aj)
+    local at
+    local au
+    local av
+    local aw
+    local function ax(ay)
+        local az = ay.Position - av
+        aj.Position = UDim2.new(aw.X.Scale, aw.X.Offset + az.X, aw.Y.Scale, aw.Y.Offset + az.Y)
+    end
+    aj.InputBegan:Connect(
+        function(ay)
+            if ay.UserInputType == Enum.UserInputType.MouseButton1 then
+                at = true
+                av = ay.Position
+                aw = aj.Position
+                ay.Changed:Connect(
+                    function()
+                        if ay.UserInputState == Enum.UserInputState.End then
+                            at = false
+                        end
+                    end
+                )
+            end
+        end
+    )
+    aj.InputChanged:Connect(
+        function(ay)
+            if ay.UserInputType == Enum.UserInputType.MouseMovement then
+                au = ay
+            end
+        end
+    )
+    game:GetService("UserInputService").InputChanged:Connect(
+        function(ay)
+            if ay == au and at then
+                ax(ay)
+            end
+        end
+    )
+end
+as(aj)
+return ah
