@@ -1,8 +1,9 @@
-local cloneref = debug.getupvalue(game.HttpGet, 1) -- Assuming cloneref comes from upvalue
-local CoreGui = cloneref(game:GetService("CoreGui"))
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
 
+-- Create ScreenGui in PlayerGui instead of CoreGui
 local a = {}
-a["1"] = Instance.new("ScreenGui", CoreGui) -- Uses the cloned CoreGui
+a["1"] = Instance.new("ScreenGui", playerGui)
 a["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets
 a["1"]["Name"] = [[Screen]]
 a["1"]["ResetOnSpawn"] = false
