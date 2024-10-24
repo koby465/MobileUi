@@ -1,9 +1,11 @@
 local a = {}
-a["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"))
+a["1"] = Instance.new("ScreenGui")
 a["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets
 a["1"]["Name"] = [[Screen]]
 a["1"]["ResetOnSpawn"] = false
 a["1"]["DisplayOrder"] = 99999
+a["1"].Parent = game:GetService("StarterGui")  -- Change parent to StarterGui
+
 a["2"] = Instance.new("Frame", a["1"])
 a["2"]["ZIndex"] = 0
 a["2"]["BorderSizePixel"] = 0
@@ -450,11 +452,23 @@ local function b()
     end
     return q
 end
-local ah = b()
-local ai = Instance.new("ScreenGui", game:GetService("CoreGui"))
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Lighting = game:GetService("Lighting")
+
+-- Create a folder in ReplicatedStorage to store GUI elements
+local guiFolder = Instance.new("Folder")
+guiFolder.Name = "CustomGUIs"
+guiFolder.Parent = ReplicatedStorage
+
+-- Create the ScreenGui
+local ai = Instance.new("ScreenGui")
 ai.IgnoreGuiInset = true
 ai.Name = "CustomButtonGui"
 ai.DisplayOrder = 100000
+ai.Parent = guiFolder -- Store the ScreenGui in ReplicatedStorage
+
+-- Create the button
 local aj = Instance.new("TextButton")
 aj.Parent = ai
 aj.Size = UDim2.new(0, 100, 0, 50)
@@ -463,9 +477,13 @@ aj.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 aj.TextColor3 = Color3.fromRGB(255, 255, 255)
 aj.Text = "Toggled Off"
 aj.TextScaled = true
+
+-- Variable to toggle state
 local ak = false
+
+-- Function to toggle visibility of certain elements
 local function al()
-    local am = game:GetService("CoreGui"):FindFirstChild("Screen")
+    local am = game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("Screen")
     if am then
         for _, an in pairs(am:GetChildren()) do
             if an:IsA("GuiObject") then
@@ -473,12 +491,20 @@ local function al()
             end
         end
     end
-    local ao = game:GetService("Lighting")
+    local ao = Lighting
     local ap = ao:FindFirstChildOfClass("BlurEffect")
     if ap then
         ap:Destroy()
     end
 end
+
+-- Clone the GUI to the player's PlayerGui
+Players.PlayerAdded:Connect(function(player)
+    local playerGui = player:WaitForChild("PlayerGui")
+    local clonedGui = ai:Clone()
+    clonedGui.Parent = playerGui
+end)
+
 local function aq()
     if ak then
         aj.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
