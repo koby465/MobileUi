@@ -1,9 +1,14 @@
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- Create ScreenGui in PlayerGui instead of CoreGui
 local a = {}
-a["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"))
+a["1"] = Instance.new("ScreenGui", playerGui)
 a["1"]["ScreenInsets"] = Enum.ScreenInsets.DeviceSafeInsets
 a["1"]["Name"] = [[Screen]]
 a["1"]["ResetOnSpawn"] = false
 a["1"]["DisplayOrder"] = 99999
+
 a["2"] = Instance.new("Frame", a["1"])
 a["2"]["ZIndex"] = 0
 a["2"]["BorderSizePixel"] = 0
@@ -14,7 +19,9 @@ a["2"]["Size"] = UDim2.new(1, 0, 1, 0)
 a["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
 a["2"]["Name"] = [[ClickGui]]
+
 a["3"] = Instance.new("LocalScript", a["2"])
+
 a["4"] = Instance.new("Frame", a["3"])
 a["4"]["BorderSizePixel"] = 0
 a["4"]["BackgroundColor3"] = Color3.fromRGB(162, 162, 162)
@@ -22,6 +29,7 @@ a["4"]["BackgroundTransparency"] = 1
 a["4"]["Size"] = UDim2.new(0, 100, 0, 100)
 a["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["4"]["Name"] = [[Module]]
+
 a["5"] = Instance.new("TextLabel", a["4"])
 a["5"]["TextWrapped"] = true
 a["5"]["BorderSizePixel"] = 0
@@ -35,11 +43,13 @@ a["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["5"]["Text"] = [[Module]]
 a["5"]["Name"] = [[Title]]
 a["5"]["BackgroundTransparency"] = 1
+
 a["6"] = Instance.new("UIPadding", a["5"])
 a["6"]["PaddingTop"] = UDim.new(0.25, 0)
 a["6"]["PaddingRight"] = UDim.new(0.25, 0)
 a["6"]["PaddingBottom"] = UDim.new(0.25, 0)
 a["6"]["PaddingLeft"] = UDim.new(0.25, 0)
+
 a["7"] = Instance.new("ImageLabel", a["4"])
 a["7"]["BorderSizePixel"] = 0
 a["7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
